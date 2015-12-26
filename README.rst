@@ -1,7 +1,8 @@
-#Support smart Chinese Analyzer
+Support smart Chinese Analyzer
+--------
 
 Smart Chinese Analyzer is containing in latest Lucene-solr repository.I have add it to this Stratio’s Cassandra Lucene Index.
-Details in my blog : https://pp1230.github.io
+Details in my blog : `PHYs Blog <http://pp1230.github.io>`__
 
 ================================
 Stratio’s Cassandra Lucene Index
