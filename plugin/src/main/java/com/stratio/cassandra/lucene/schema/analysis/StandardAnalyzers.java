@@ -25,6 +25,7 @@ import org.apache.lucene.analysis.br.BrazilianAnalyzer;
 import org.apache.lucene.analysis.ca.CatalanAnalyzer;
 import org.apache.lucene.analysis.cjk.CJKAnalyzer;
 import org.apache.lucene.analysis.ckb.SoraniAnalyzer;
+import org.apache.lucene.analysis.cn.smart.SmartChineseAnalyzer;
 import org.apache.lucene.analysis.core.KeywordAnalyzer;
 import org.apache.lucene.analysis.core.SimpleAnalyzer;
 import org.apache.lucene.analysis.core.StopAnalyzer;
@@ -163,7 +164,7 @@ public enum StandardAnalyzers {
     CHINESE() {
         @Override
         protected Analyzer build() {
-            return new StandardAnalyzer();
+            return new SmartChineseAnalyzer();
         }
     },
 

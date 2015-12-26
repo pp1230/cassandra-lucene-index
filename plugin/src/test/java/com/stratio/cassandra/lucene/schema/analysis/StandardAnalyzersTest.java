@@ -25,6 +25,7 @@ import org.apache.lucene.analysis.br.BrazilianAnalyzer;
 import org.apache.lucene.analysis.ca.CatalanAnalyzer;
 import org.apache.lucene.analysis.cjk.CJKAnalyzer;
 import org.apache.lucene.analysis.ckb.SoraniAnalyzer;
+import org.apache.lucene.analysis.cn.smart.SmartChineseAnalyzer;
 import org.apache.lucene.analysis.core.KeywordAnalyzer;
 import org.apache.lucene.analysis.core.SimpleAnalyzer;
 import org.apache.lucene.analysis.core.StopAnalyzer;
@@ -160,7 +161,7 @@ public class StandardAnalyzersTest {
     @Test
     public void testGetChinesePreBuiltAnalyzer() {
         Analyzer analyzer = StandardAnalyzers.CHINESE.get();
-        assertEquals("Expected another type of analyzer", StandardAnalyzer.class, analyzer.getClass());
+        assertEquals("Expected another type of analyzer", SmartChineseAnalyzer.class, analyzer.getClass());
         analyzer.close();
     }
 
